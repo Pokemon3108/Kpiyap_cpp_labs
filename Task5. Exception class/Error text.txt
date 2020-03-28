@@ -1,0 +1,11 @@
+Code: 1 
+ErrorText:Input is not a number
+
+Code: 2
+ErrorText: Input number is not positive
+
+Code: 3
+ErrorText: There are not only letters in string
+
+Code: 4
+ErrorText: There are not only letters and numbers in string
