@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AirTransport">
+    <Position X="2" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAgwADAAAAAAQAAAEAAAAAAAAAiBAAAFAA=</HashCode>
+      <FileName>AirTransport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bus">
+    <Position X="10" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAEAAAARAIAIAAQAAIAAAAAQAAAAgAAAAFAI=</HashCode>
+      <FileName>Bus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GroundTransport">
+    <Position X="11" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAIAAAIgAAABAAAAAAQAQAAEAABAAAAEgAAAAFAA=</HashCode>
+      <FileName>GroundTransport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Helicopter">
+    <Position X="3.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAIAABAAAAACYACAAEAAACAAIAgAwAAFAg=</HashCode>
+      <FileName>Helicopter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plane">
+    <Position X="1" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABEBAAgAAAQAAAAAQAQABAAIgAAAAFAA=</HashCode>
+      <FileName>Plane.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SailBoat">
+    <Position X="5.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAABAAACABAAAAAEQAAAAAAAAAAAEAgAAAAFAA=</HashCode>
+      <FileName>SailBoat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Submarine">
+    <Position X="7.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAACAAAAABAAAEAAQAAAAAAIAAAAAAgIAAAFAA=</HashCode>
+      <FileName>Submarine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tractor">
+    <Position X="12.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAABAAAAAAQAAAAAEgCQAAAAgAAAAFAA=</HashCode>
+      <FileName>Tractor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Transport">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABAAAAAQEBABAAEAQQAAAAAAAUQBAAgAAAAFAA=</HashCode>
+      <FileName>Transport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaterTransport">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAgEAAAAAABAAAAAAQAABEAAAAQAAAAgAEAAFAA=</HashCode>
+      <FileName>WaterTransport.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exception" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAgAABAAABAAAAAAAA=</HashCode>
+      <FileName>Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InputError" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAABAAAAAAAAAIAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>InputError.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interface&lt;T&gt;" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAABABAgQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tree&lt;T&gt;" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Tree&lt;T&gt;::Iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Tree.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAACCAADAAACAAAAgAIAQAAAAAAAAByAISQAAAAA=</HashCode>
+      <FileName>Tree.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Functor" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Functor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Node&lt;T&gt;" Collapsed="true">
+    <Position X="14.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAIAAAAAAAQAAAAgAA=</HashCode>
+      <FileName>Tree.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
