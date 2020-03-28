@@ -1,0 +1,109 @@
+template<typename T>
+T & Tree<T>::Iterator::operator*()
+{
+	return stNext.top()->data;
+}
+
+
+template<typename T>
+typename Tree<T>::Iterator Tree<T>::Iterator::operator++(int)
+{
+	stPrevious.push(stNext.top());
+	Node<T>* temp = stNext.top();
+	Node<T>* curr = temp->right;
+	stNext.pop();
+	while (curr)
+	{
+		stNext.push(curr);
+		curr = curr->left;
+	}
+	return stNext.top();
+}
+
+
+template<typename T>
+typename Tree<T>::Iterator Tree<T>::Iterator::operator--(int)
+{
+	stNext.push(stPrevious.top());
+	stPrevious.pop();
+	return stNext.top();
+}
+
+//template<typename T>
+//void Tree<T>::Iterator::next()
+//{
+//	stPrevious.push(stNext.top());
+//	Node<T>* temp = stNext.top();
+//	Node<T>* curr = temp->right;
+//	stNext.pop();
+//	while (curr)
+//	{
+//		stNext.push(curr);
+//		curr = curr->left;
+//	}
+//}
+
+//template<typename T>
+//void Tree<T>::Iterator::prev()
+//{
+//	stNext.push(stPrevious.top());
+//	stPrevious.pop();
+//}
+
+template<typename T>
+bool Tree<T>::Iterator::isEmpty()
+{
+	return (!stNext.size());
+}
+
+
+class Iterator
+	{
+	private:
+		std::stack<Node<T>*> stNext;
+		std::stack<Node<T>*> stPrevious;
+	public:
+		Iterator(Node<T>* root)
+		{
+			Node<T>*curr = root;
+			while (curr)
+			{
+				stNext.push(curr);
+				curr = curr->left;
+			}
+			
+		}
+
+		T& operator*();
+		Tree<T>::Iterator operator++(int);
+		Tree<T>::Iterator operator--(int);
+
+		//Node<T>* curr();
+		//void next();
+		//void prev();
+		bool isEmpty();
+		void iterate(Iterator it)
+		{
+			while (!it.isEmpty())
+			{
+				cout << *it << " ";
+				it++;
+			}
+
+		}
+	};
+	
+	
+	
+	
+	template<typename T>
+void Tree<T>::show(Node<T>* root, int level)
+{
+	if (root)
+	{
+		show(root->left, level + 1);
+		for (int i = 0; i < level; i++) cout << "   ";
+		cout << root->data << endl;
+		show(root->right, level + 1);
+	}
+}
